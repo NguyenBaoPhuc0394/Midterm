@@ -1,0 +1,87 @@
+/* The CSS remains largely the same as the admin, but feel free to adjust the colors, sizes, etc. */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    min-height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+i{
+    margin-right: 10px;
+}
+
+span{
+    font-size: 15px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4e6a85;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.utility {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.utility-header {
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.utility-header h2 {
+    margin: 0;
+    color: #333333;
+}
+
+.utility-body {
+    padding: 20px;
+}
+
+#toggle-btn{
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+#toggle-btn i{
+    font-size: 1.5rem;
+    color: #fff;
+}
