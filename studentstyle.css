@@ -129,7 +129,9 @@ span{
 }
 
 .sidebar ul li a:hover {
-    background-color: #135D66;
+    background-color: white;
+    color: #003C43;
+    font-weight: bolder;
 }
 
 .navbar{
@@ -147,7 +149,7 @@ span{
     width: 40px;
 }
 
-.card{
+/* .card{
     background-color: #f5f5f5;
     transition: .4s;
     cursor: pointer;
@@ -159,7 +161,7 @@ span{
     background-color: #293b5f;
     color: #fff;
     transform: translateY(-10.5px);
-}
+} */
 
 @media (min-width: 768px){
     .navbar form{
@@ -248,4 +250,15 @@ span{
 #toggle-btn i{
     font-size: 1.5rem;
     color: #fff;
+}
+
+.active a{
+    background-color: white;
+}
+.active a span{
+    color: #003C43;
+    font-weight: bolder;
+}
+.active i{
+    color: #003C43;
 }
