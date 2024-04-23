@@ -15,3 +15,10 @@ function active(event){
 sidebarItem.forEach(item => {
     item.addEventListener('click',active);
 })
+
+// const avatar = document.querySelector("#avatar")
+function home(event){
+    sidebarItem.forEach(item => {
+        item.classList.remove('active')
+    })
+}
