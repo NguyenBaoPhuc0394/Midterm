@@ -81,10 +81,10 @@ body, html {
     position: relative;
 }
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
     0%   { opacity: 0; } 
     100% { opacity: 1; }
-} */
+}
 
 a.sidebar-link{
     padding: .625rem 1.625rem;
@@ -138,11 +138,12 @@ span{
     background-color: #B6BBC4;
     /* background-color: #f5f5f5; */
     box-shadow: 0 0 2rem rgba(33, 37, 41, .1);
+    
 }
 
-.navbar-expand .navbar-collapse{
-    min-width: 200px;
-}
+/* .navbar-expand .navbar-collapse{
+    min-width: 100px;
+} */
 
 .avatar{
     height: 40px;
@@ -163,7 +164,7 @@ span{
     transform: translateY(-10.5px);
 } */
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .navbar form{
         max-width: 320px;
     }
@@ -188,7 +189,7 @@ span{
     .navbar-expand .navbar-nav .dropdown-menu{
         box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .05);
     }
-}
+} */
 
 .widget{
     height: 100%;
@@ -224,13 +225,13 @@ span{
 
 .utility-header {
     border-bottom: 1px solid #eaeaea;
-    padding: 20px;
+    padding: 15px;
     background-color: #f9f9f9;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
-.utility-header h2 {
+.utility-header h3 {
     margin: 0;
     color: #003C43;
     font-weight: bold;
@@ -261,4 +262,10 @@ span{
 }
 .active i{
     color: #003C43;
+}
+
+.utility-body .video-content {
+    width: 100%; /* Đặt chiều rộng video bằng với khu vực màu trắng */
+    height: auto; /* Tùy chỉnh chiều cao một cách tự động */
+    object-fit: cover; /* Đảm bảo video che đầy khu vực mà không bị méo */
 }
