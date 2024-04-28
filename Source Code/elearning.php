@@ -2,7 +2,6 @@
   $page_title = "E-Learning";
   include("sidebar.php");
   include("header.php");
-  echo('<link rel="stylesheet" href="../css/Information.css">');
 ?>
 
 <div>
