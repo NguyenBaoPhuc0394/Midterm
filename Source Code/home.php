@@ -1,4 +1,9 @@
-    <main class="main-content">
+<!-- <?php 
+//   $page_title = "Home";
+//   include("sidebar.php");
+//   include("header.php");
+?> -->
+    <!-- <main class="main-content"> -->
         <!-- Main content here -->
         <div class="utility">
             <div class="utility-header">
@@ -16,4 +21,8 @@
             </div>
             <!-- Other sections for different functionalities -->
         </div>
-    </main>
+    <!-- </main> -->
+
+<!-- <?php 
+//   include("footer.php");
+?> -->

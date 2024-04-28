@@ -1,0 +1,152 @@
+
+/* body, html{
+  width: 100%;
+} */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+/* body {
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  align-items: flex-start;
+  height: 100%;
+  display: flex;
+ 
+}
+
+.main {
+  width: 100%;
+  max-width: none; 
+} */
+
+.card-header {
+  background-color: #003C43;
+  color: white;
+  padding: 15px; 
+  font-size: 30px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 
+.card-header button {
+  background: #6cddf3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+/* .card-header button:hover {
+  background: #fffffe;
+} */
+
+.student-info-text {
+  margin-top: -180px; 
+  text-align: center; 
+  padding: 4rem;
+  padding-bottom: 2.5rem; 
+  color: #0111f2;
+  font-size:larger;
+}
+.name-text {
+  margin-top: -50px; 
+  text-align: center; 
+  padding: 4rem;
+  padding-bottom: 2.5rem; 
+  font-size:2.5rem;
+  margin-bottom: -2rem;
+}
+.email-text {
+  font-size: 0.8rem; 
+  margin-bottom: -2rem; 
+  text-align: center; 
+  color: #0111f2;
+  padding: -2rem;
+  padding-bottom: 2.5rem; 
+  font-size:larger;
+}
+.learning-text {
+  font-size: 0.8rem; 
+  margin-bottom: -2rem;
+  text-align: center; 
+  padding: -2rem;
+  padding-bottom: 2.5rem; 
+  font-size:larger;
+}
+
+.student-avatar {
+  width: 180px; 
+  height: 180px; 
+  margin-bottom: -1.2rem; 
+}
+
+.media {
+  align-items: center;
+  padding: 20px; 
+}
+
+.student-details {
+  width: 100%;
+  padding-top: 1rem; 
+  text-align: center; 
+}
+
+.info-line {
+  display: flex;
+  padding: 0.25rem 0;
+}
+
+.info-line strong {
+  flex-shrink: 0; 
+  width: 140px; 
+  text-align: left; 
+}
+
+.info-line span {
+  text-align: left; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+@media (max-width: 1600px) {
+  .container {
+    padding: 0 40px; 
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; 
+  }
+
+  .student-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info-line strong, .info-line span {
+    display: block; 
+  }
+
+  .card-header {
+    padding: 16px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 5px; 
+  }
+}

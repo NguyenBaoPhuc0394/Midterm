@@ -1,0 +1,190 @@
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+body{
+  background-image: linear-gradient(to right top, #9053c7, #ae75ce, #c899d7, #dcbee1, #ede4ed);
+  /* background-image: linear-gradient(to right top, #003C43, #00484F, #135D66, #00656C, #007F73); */
+}
+
+a {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0;
+}
+
+
+a:hover {
+  text-decoration: none;
+  color: #57b846;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+
+button {
+  outline: none ;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1e7e34;
+}
+
+
+.forgot-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.box {
+  margin: auto;
+  width: 900px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 70px 130px 70px 95px;
+}
+
+.pic {
+  width: 316px;
+}
+
+.pic img {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+
+
+.form-element{
+  position: relative;
+}
+
+.username{
+  margin-bottom: 15px;
+  top: -10px;
+}
+
+.input {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+}
+
+.form-element label{
+  position: absolute;
+  padding-left: 10px;
+  top:13px;
+  cursor: text;
+
+}
+
+.form-element input:focus + label,.form-element input:not(:placeholder-shown) + label{
+  opacity:1;
+  transform: scale(.9) translateY(-170%) translateX(-10px);
+  color:#000;
+}
+
+.form-element input:focus{
+  border:1px solid mediumpurple;
+  outline-color: purple;
+}
+
+.form-element label,.form-element input{
+  transition: all 0.4s;
+}
+
+.input:focus{
+  color: black;
+}
+
+
+.container-button {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0;
+  margin-top: 13px;
+}
+
+.btn {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #57b846;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.forgot{
+  text-align: center;
+  margin-top: 7px;
+}
+
+.error{
+  color: red;
+  margin-top: 13px;
+  margin-left: 5px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+

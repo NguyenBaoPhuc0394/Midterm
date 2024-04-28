@@ -1,0 +1,17 @@
+{
+    "name": "giahu/login",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Giahu\\Login\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BaitapOOP",
+            "email": "giahuyasdfghjk@gmail.com"
+        }
+    ]
+}

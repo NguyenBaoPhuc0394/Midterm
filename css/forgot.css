@@ -1,0 +1,142 @@
+body, html {
+	height: 100%;
+}
+body{
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);	
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* background-color: yellowgreen; */
+}
+
+
+.form-element{
+  position: relative;
+}
+
+.box {
+  margin: 100px auto;
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 95px 70px 95px;
+  justify-content: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #612fa3;
+}
+
+.btn {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  width: 450px;
+  height: 50px;
+  border-radius: 25px;
+  background: #8757d0;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 2px #a79fee;
+  padding: 0 25px;
+  margin-bottom: -60px;
+  
+}
+
+/* .btn{
+  background: #ffffff;
+  color: #4C489D;
+  border-radius: 20px; 
+  padding: 0.75rem 2rem; 
+  font-size: 1rem; 
+  font-weight: 800; 
+  text-transform: uppercase; 
+  display: block; 
+  width: fit-content; 
+  margin: 1rem auto; 
+  box-shadow: 0px 2px 2px #a79fee;
+  transition: .2s;
+} */
+
+.title {
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 50px;
+  margin-top: -45px;
+  font-weight: bold;
+}
+
+.line{
+  width: 500px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.input {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  display: block;
+  width: 400px;
+  background: #e3dbfb;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0 10px 0 20px;
+  margin: auto;
+  border: #e6e6e6;
+}
+
+.form-element label{
+  position: absolute;
+  padding-left: 10px;
+  top:10px;
+  right: 370px;
+  cursor: text;
+}
+
+.form-element input:focus + label,.form-element input:not(:placeholder-shown) + label{
+  opacity:1;
+  transform: scale(.9) translateY(-170%) translateX(-10px);
+  color:#000;
+}
+
+.form-element input:focus{
+  border:1px solid mediumpurple;
+  outline-color: #9691a6;
+}
+
+.form-element label,.form-element input{
+  transition: all 0.4s;
+}
+
+.help{
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+p{
+  margin-bottom: -10px;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 90%;
+}
+
+.error{
+  color: red;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+

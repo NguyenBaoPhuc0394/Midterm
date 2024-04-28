@@ -1,0 +1,123 @@
+.box {
+    margin: 100px auto;
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 95px 30px 95px;
+    justify-content: center;
+    box-shadow: 1px 1px #D3D3D3;
+}
+
+body{
+    background-image: linear-gradient(to right, #bbbce9, #bdbeea, #c0c0eb, #c2c2ed, #c4c4ee);
+}
+
+.line{
+    width: 500px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    opacity: 0.3;
+
+}
+
+.title {
+    font-size: 24px;
+    color: #506bec;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 50px;
+    margin-top: -45px;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 410px;
+    height: 40px;
+    border-radius: 25px;
+    background: #506bec;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: -1000px;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: #8296F7;
+}
+
+
+.input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+    display: inline-block;
+    width: 400px;
+    background: #e1eafc;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px 0 20px;
+    border: #e6e6e6;
+    position: relative;
+}
+
+.form-element label{
+    position: absolute;
+    padding-left: 10px;
+    top:7px;
+    cursor: text;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+.form-element input:focus + label,.form-element input:not(:placeholder-shown) + label{
+    opacity:1;
+    transform: scale(.9) translateY(-140%) translateX(-10px);
+    color:#000;
+}
+
+.form-element input:focus{
+    border:1px solid mediumpurple;
+    outline-color: #9691a6;
+}
+
+.pass{
+    margin-bottom: 30px;
+}
+
+
+.form-element label,.form-element input{
+    transition: all 0.4s;
+}
+
+
+.confirm-pass{
+    margin-top: -5px;
+}
+
+.form-element{
+    position: relative;
+}
+
+#passLabel{
+    right: 290px;
+}
+
+#confirmPassLabel{
+    right: 265px;
+}
+
+.error{
+    color: red;
+    margin-top: 10px;
+}
