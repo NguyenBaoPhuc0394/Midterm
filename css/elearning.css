@@ -1,0 +1,168 @@
+.card-header{
+    background-color: #003C43;
+    color: white
+}
+
+.label{
+    margin-top: 10px;
+}
+
+h6{
+    color: #003C43;
+}
+
+
+/* .subject{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+#dropdown{
+    /* min-width: 15em; */
+    position: relative;
+}
+
+#dropdown *{
+    box-sizing: border-box;
+}
+
+.select{
+    background: #fff;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid lightgrey;
+    border-radius: 0.5em;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked{
+    border: 2px solid #3C5B6F;
+    box-shadow: 0 0 0.8em #153448;
+}
+
+.select:hover{
+    background: darkgray;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 5px 1px;
+    background: #153448;
+    border: 1px solid lightblue;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color:white;
+    position: absolute;
+    top: -50%;
+    left: 30%;
+    width:15%;
+    /* transform: translateX(-50%); */
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 5px 5px;
+    font-size: small;
+    margin: 5px 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #3C5B6F;
+}
+
+.act{
+    background: #3C5B6F;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+.copy-text{
+    position: relative;
+    padding: 2px;
+    background: #fff;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+}
+
+.copy-text input.text{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.copy-text button{
+    background: green;
+    padding: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copy-text button:active{
+    background: green;
+}
+
+.copy-text button:before{
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: -10px;
+    background: green;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.copy-text button:after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    height: 10px;
+    background: green;
+    padding: 8px 10px;
+    font-size: 15px;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.copy-text.active button:before,
+.copy-text.active button:before{
+    display: block;
+}
