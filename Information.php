@@ -1,11 +1,11 @@
 
 <?php 
   session_start();
-  require_once('../Controller/getInformation.php');
+  require_once('Controller/getInformation.php');
   $page_title = "Thông Tin";
   include("sidebar.php");
   include("header.php");
-  echo('<link rel="stylesheet" href="../css/Information.css">');
+  echo('<link rel="stylesheet" href="css/Information.css">');
 ?>
 
 <div class="container mt-5">
@@ -16,7 +16,7 @@
     </div>
     <div class="card-body">
       <div class="d-flex align-items-center pb-3">
-        <img src="../images/student.png" class="rounded-circle student-avatar me-3" alt="Student Avatar">
+        <img src="images/student.png" class="rounded-circle student-avatar me-3" alt="Student Avatar">
         <div class="student-info-text-container">
             <div class="name-text"><?php echo $infor['hoten'] ?></div>
             <div class="email-text"><?php echo $infor['Email'] ?></div>

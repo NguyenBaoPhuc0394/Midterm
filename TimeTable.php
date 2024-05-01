@@ -1,12 +1,12 @@
 <?php 
   session_start();
   $page_title = "Thời khóa biểu";
-  require_once('../Controller/getTimetable.php');
+  require_once('Controller/getTimetable.php');
   // require_once 'vendor/autoload.php';
   // use PhpOffice\PhpSpreadsheet\IOFactory;
   include("sidebar.php");
   include("header.php");
-  echo('<link rel="stylesheet" href="../css/timetable.css">');
+  echo('<link rel="stylesheet" href="css/timetable.css">');
 ?>
 <div class="container mt-5">
     <div class="row">

@@ -1,9 +1,9 @@
 <?php
     session_start();
     $page_title = 'home';
-    require '../Model/process.php';
+    require 'Model/process.php';
     if($_SESSION['status'] != 'login success'){
-        header('Location: ../View/login.php');
+        header('Location: login.php');
     }
     $page_title = 'Home';
     include("sidebar.php");

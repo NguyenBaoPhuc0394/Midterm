@@ -1,6 +1,6 @@
 <?php
-    require_once('../Model/process.php');
-    require_once '../vendor/autoload.php';
+    require_once('Model/process.php');
+    require_once 'vendor/autoload.php';
     use PhpOffice\PhpSpreadsheet\IOFactory;
     if(isset($_SESSION['status']) && $_SESSION['status'] == 'login success'){
         $id = $_SESSION['maHS'];
@@ -12,7 +12,7 @@
     }
 
     function getData($maLop){
-        $filepath = '../../Admin_backend/timetable/'.$maLop;
+        $filepath = '../Admin_backend/timetable/'.$maLop;
         $spreadsheet = IOFactory::load($filepath);
         $sheet = $spreadsheet->getActiveSheet();
         $data = $sheet->toArray();

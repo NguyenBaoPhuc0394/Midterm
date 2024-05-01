@@ -1,10 +1,10 @@
 <?php 
   session_start();
-  require_once('../Controller/getTuition.php');
+  require_once('Controller/getTuition.php');
   $page_title = "Học phí";
   include("sidebar.php");
   include("header.php");
-  require_once '../vendor/autoload.php';
+  require_once 'vendor/autoload.php';
   use PhpOffice\PhpSpreadsheet\IOFactory;
 
 ?>
@@ -42,7 +42,7 @@
                         }
                     }
                     function getSum($filename){
-                        $filepath = '../../Admin_backend/tuition/'.$filename;
+                        $filepath = '../Admin_backend/tuition/'.$filename;
                         $sum = 0;
                         $spreadsheet = IOFactory::load($filepath);
                         $sheet = $spreadsheet->getActiveSheet();

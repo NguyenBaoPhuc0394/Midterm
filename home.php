@@ -12,7 +12,7 @@
             <div class="utility-body">
                 <div class="utility-body">
                     <video class="video-content" autoplay loop muted playsinline>
-                        <source src="../video/st3.mp4" type="video/mp4">
+                        <source src="video/st3.mp4" type="video/mp4">
                     </video>
                     
                 </div>

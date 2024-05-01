@@ -2,7 +2,7 @@
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
-    require_once('../Model/process.php');
+    require_once('Model/process.php');
     if(isset($_POST['selectedValue'])){
         $selectedValue = $_POST['selectedValue'];
         // require_once('../Model/process.php');

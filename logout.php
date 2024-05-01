@@ -8,7 +8,7 @@
     <title>Đăng xuất</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/logout.css">
+    <link rel="stylesheet" href="css/logout.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -30,7 +30,7 @@
                 <div class="col col-md-4 mt-5 mx-auto p-3 border rounded">
                     <div class="cell">
                         <div class="pic">
-                            <img src="../images/logout.jpg" alt="jpg">
+                            <img src="images/logout.jpg" alt="jpg">
                         </div>
                         <div class="main">
                             <div id="header">
@@ -57,7 +57,7 @@
           }
           if (countDown == -1) {
               clearInterval(id);
-              window.location.href = 'login.php';
+              window.location.href = '../login.php';
           }
       }, 1000);
   </script>

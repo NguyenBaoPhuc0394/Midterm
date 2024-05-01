@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require '../process/process.php';
+    require 'Model/process.php';
     $error = '';
 
     if(isset($_POST['num1']) && isset($_POST['num2']) && isset($_POST['num3']) && isset($_POST['num4'])){
@@ -33,9 +33,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP Verification</title>
-    <link rel="stylesheet" type="text/css" href="../css/otp.css"/>
+    <link rel="stylesheet" type="text/css" href="css/otp.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="../js/otp.js" defer></script>
+    <script src="js/otp.js" defer></script>
   </head>
   <body>
     <div class="container">
