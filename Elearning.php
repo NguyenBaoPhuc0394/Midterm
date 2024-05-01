@@ -1,7 +1,7 @@
 <?php 
   session_start();
   $page_title = "E-Learning";
-  require_once('Controller/getElearning.php');
+  // require_once('Controller/getElearning.php');
   include("sidebar.php");
   include("header.php");
   echo '<link rel="stylesheet" href="css/elearning.css">';

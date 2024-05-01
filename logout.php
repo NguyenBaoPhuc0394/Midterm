@@ -57,7 +57,7 @@
           }
           if (countDown == -1) {
               clearInterval(id);
-              window.location.href = '../login.php';
+              window.location.href = 'login.php';
           }
       }, 1000);
   </script>

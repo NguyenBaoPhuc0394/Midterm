@@ -8,13 +8,14 @@
         $pass = $_POST['pass'];
 
         $result = loginStudent($user, $pass);
-        if(!empty($result['error'])){
+        if($result['error'] != ''){
             $error = $result['error'];
         }
         else{
             $_SESSION['maHS'] = $result['maHS'];
             $_SESSION['status'] = 'login success';
             header('Location: index.php');
+            exit;
         }
     }
 ?>
