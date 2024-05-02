@@ -32,32 +32,32 @@ insert into HocSinh values('HS07', '10A3', 'Le Thi Bao A', '+84 238 822 3099', '
 insert into HocSinh values('HS08', '10A3', 'Nguyen Thi Kim T', '+84 238 822 3099', 'TPHCM', 'Nu', 'TPHCM', 'HS08@gmail.com');
 insert into HocSinh values('HS09', '10A3', 'Le Truong Minh N', '+84 982 887 0446', 'TPHCM', 'Nam', 'TPHCM', 'HS09@gmail.com');
 
-insert into Elearning values('10A1', 'D', '', '')
-insert into Elearning values('10A1', 'H', '', '')
-insert into Elearning values('10A1', 'L', '', '')
-insert into Elearning values('10A1', 'S', '', '')
-insert into Elearning values('10A1', 'SH', '', '')
-insert into Elearning values('10A1', 'T', '', '')
-insert into Elearning values('10A1', 'TH', '', '')
-insert into Elearning values('10A1', 'V', '', '')
+insert into Elearning values('10A1', 'D', '', '');
+insert into Elearning values('10A1', 'H', '', '');
+insert into Elearning values('10A1', 'L', '', '');
+insert into Elearning values('10A1', 'S', '', '');
+insert into Elearning values('10A1', 'SH', '', '');
+insert into Elearning values('10A1', 'T', '', '');
+insert into Elearning values('10A1', 'TH', '', '');
+insert into Elearning values('10A1', 'V', '', '');
 
-insert into Elearning values('10A2', 'D', '', '')
-insert into Elearning values('10A2', 'H', '', '')
-insert into Elearning values('10A2', 'L', '', '')
-insert into Elearning values('10A2', 'S', '', '')
-insert into Elearning values('10A2', 'SH', '', '')
-insert into Elearning values('10A2', 'T', '', '')
-insert into Elearning values('10A2', 'TH', '', '')
-insert into Elearning values('10A2', 'V', '', '')
+insert into Elearning values('10A2', 'D', '', '');
+insert into Elearning values('10A2', 'H', '', '');
+insert into Elearning values('10A2', 'L', '', '');
+insert into Elearning values('10A2', 'S', '', '');
+insert into Elearning values('10A2', 'SH', '', '');
+insert into Elearning values('10A2', 'T', '', '');
+insert into Elearning values('10A2', 'TH', '', '');
+insert into Elearning values('10A2', 'V', '', '');
 
-insert into Elearning values('10A3', 'D', '', '')
-insert into Elearning values('10A3', 'H', '', '')
-insert into Elearning values('10A3', 'L', '', '')
-insert into Elearning values('10A3', 'S', '', '')
-insert into Elearning values('10A3', 'SH', '', '')
-insert into Elearning values('10A3', 'T', '', '')
-insert into Elearning values('10A3', 'TH', '', '')
-insert into Elearning values('10A3', 'V', '', '')
+insert into Elearning values('10A3', 'D', '', '');
+insert into Elearning values('10A3', 'H', '', '');
+insert into Elearning values('10A3', 'L', '', '');
+insert into Elearning values('10A3', 'S', '', '');
+insert into Elearning values('10A3', 'SH', '', '');
+insert into Elearning values('10A3', 'T', '', '');
+insert into Elearning values('10A3', 'TH', '', '');
+insert into Elearning values('10A3', 'V', '', '');
 
 
 insert into adminAccount values ('admin', '21232f297a57a5a743894a0e4a801fc3'); /*pass: admin*/
