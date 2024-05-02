@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require 'Model/process.php';
+    require 'Controller/process.php';
     $error = '';
 
     if(isset($_POST['email'])){

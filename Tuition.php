@@ -42,7 +42,7 @@
                         }
                     }
                     function getSum($filename){
-                        $filepath = '../Admin_backend/tuition/'.$filename;
+                        $filepath = '../MVC_Admin/modal/tuition/'.$filename;
                         $sum = 0;
                         $spreadsheet = IOFactory::load($filepath);
                         $sheet = $spreadsheet->getActiveSheet();
