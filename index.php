@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if($_SESSION['status']  !== 'login success'){
+    if($_SESSION['status']  !== 'login success' || !isset($_SESSION['maHS']) || !isset($_SESSION['status'])){
         header('Location: login.php');
         exit;
     }
