@@ -1,6 +1,10 @@
 
 <?php
-    require_once('Controller/getInformation.php');
+    require_once('Controller/process.php');
+    if(isset($_SESSION['status']) && $_SESSION['status'] == 'login success'){
+        $id = $_SESSION['maHS'];
+        $infor = getInformation($id);
+    }
 ?>
 <div class="main">
     <nav class="navbar navbar-expand px-4 py-3">
@@ -8,7 +12,8 @@
             <div class="col-md-12">
                 <div class="widget no-boder m-0">
                     <a href="index.php" style="text-decoration: none;">
-                        <img src="images/school.png" alt="" style="padding-right: 10px;">
+                        <!-- <img src="images/school.png" alt="" style="padding-right: 10px;"> -->
+                        <i class="fa-solid fa-school" style="color: green; font-size: 40px;"></i>
                         <label id="home">HOME</label>
                         <!-- <span id="home">HOME</span> -->
                     </a>
@@ -17,12 +22,13 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ms-auto">
-                <div id="studentName" style="color: #003C43;font-size: large;margin: 15px;font-weight: bold; position: relative;bottom: 5px;">
+                <div id="studentName" style="color: white;font-size: large;margin: 15px;font-weight: bold; position: relative;bottom: 5px;">
                     <span style="font-size: large;"><?php echo $infor['hoten'] ?></span>
                 </div>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="userAvatar">
                     <a href="#" class="nav-icon pe-md-0" data-bs-toggle="dropdown">
-                        <img src="images/user.png" class="avatar img-fluid" alt="">
+                        <!-- <img src="images/user.png" class="avatar img-fluid" alt=""> -->
+                        <i class="fa-regular fa-circle-user" style="font-size: 35px;color: green;" id="avatar"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end rounded">
                         <a href="logout.php" class="dropdown-item">

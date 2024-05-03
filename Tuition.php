@@ -1,12 +1,15 @@
 <?php 
   session_start();
-  require_once('Controller/getTuition.php');
+  require_once('Controller/process.php');
   $page_title = "Học phí";
   include("sidebar.php");
   include("header.php");
   require_once 'vendor/autoload.php';
   use PhpOffice\PhpSpreadsheet\IOFactory;
-
+  if(isset($_SESSION['status']) && $_SESSION['status'] == 'login success'){
+    $id = $_SESSION['maHS'];
+    $inforTuition = getInforTuition($id);   
+    }
 ?>
 
 <div class="container mt-5">

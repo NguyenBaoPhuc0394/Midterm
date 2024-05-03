@@ -28,9 +28,20 @@
   color: white;
   padding: 15px; 
   font-size: 30px; 
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card-header h3{
+  font-weight: bold;
+}
+
+.card-body{
+  /* background-color: rgb(21,32,43); */
+  background-color: #F9F7C9;
+  /* background-image: url("../images/background2.jpg"); */
 }
 /* 
 .card-header button {
@@ -46,30 +57,49 @@
   background: #fffffe;
 } */
 
-.student-info-text {
-  margin-top: -180px; 
+.student-info-text-container {
+  margin-top: 10px;
+  margin-left: 30px; 
   text-align: center; 
-  padding: 4rem;
-  padding-bottom: 2.5rem; 
-  color: #0111f2;
+  padding: 2.5rem;
+  /* padding-bottom: 2.5rem;  */
+  /* color: #0111f2; */
   font-size:larger;
+  border-radius: 8px;
+  /* border: 3px solid darkgreen; */
+  color: #fff;
+  background: darkcyan;
+  
+  /* background-color: teal; */
 }
-.name-text {
-  margin-top: -50px; 
-  text-align: center; 
-  padding: 4rem;
-  padding-bottom: 2.5rem; 
-  font-size:2.5rem;
-  margin-bottom: -2rem;
+
+/* #InforHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#name-text {
+  text-transform: uppercase;
 }
 .email-text {
   font-size: 0.8rem; 
   margin-bottom: -2rem; 
   text-align: center; 
-  color: #0111f2;
+  color: blue;
+  padding: -1rem;
+  padding-bottom: 2rem; 
+  font-size:larger;
+}
+
+#phoneNumber{
+  font-size: 0.8rem; 
+  margin-bottom: -2rem; 
+  text-align: center; 
+  /* color: #0111f2; */
   padding: -2rem;
   padding-bottom: 2.5rem; 
   font-size:larger;
+  margin: 5px;
 }
 .learning-text {
   font-size: 0.8rem; 
@@ -81,9 +111,11 @@
 }
 
 .student-avatar {
-  width: 180px; 
-  height: 180px; 
+  width: 100%; 
+  height: 100%; 
   margin-bottom: -1.2rem; 
+  /* border: 2px solid teal; */
+  /* background-color: #e0e0e0; */
 }
 
 .media {
@@ -92,9 +124,15 @@
 }
 
 .student-details {
-  width: 100%;
+  width: 60%;
   padding-top: 1rem; 
+  padding-left: 3rem;
   text-align: center; 
+  border-radius: 8px;
+  margin-left: 30px; 
+  /* border: 3px solid darkred; */
+  color: #fff;
+  background-color: #79C000FF;
 }
 
 .info-line {
@@ -110,6 +148,7 @@
 
 .info-line span {
   text-align: left; 
+  font-weight: bolder;
   margin-left: auto; 
   margin-right: auto; 
 }
@@ -150,3 +189,122 @@
     padding: 0 5px; 
   }
 }
+
+#studentAvatar{
+  width: 90%;
+  height: 80%;
+  margin: 15px;
+  background-color: #fff;
+}
+
+.imageStudent{
+  width: 30%;
+  border-radius: 8px;
+  /* border: 3px solid teal; */
+  background: #FFBA52FF;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#labelFile{
+  display: block;
+  width: 150px;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+input {
+  display: none;
+}
+
+#copy-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 3px;
+}
+
+#tooltiptext{
+  position: absolute;
+  left: 50%;
+  top:0;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  opacity: 0;
+  transition: opacity 0.3s ease ;
+}
+
+#tooltiptext::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+
+#copy-text:hover #tooltiptext{
+  top: -100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.detail{
+  display: flex;
+  float: left;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.shared{
+  margin: 10px;
+  width: 35%;
+  /* border: 3px solid darkred; */
+  padding: 10px;
+  border-radius: 8px;
+  /* display: flex;  */
+  justify-content: center;
+  align-items: center;
+  background: #EA738D;
+}
+
+.shared #share{
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+}
+
+.shared textarea{
+  margin: 10px auto;
+  width: 100%;
+  height: 100px;
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+
+
+
+

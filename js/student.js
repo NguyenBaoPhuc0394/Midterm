@@ -1,6 +1,16 @@
 const sidebar = document.querySelector("#toggle-btn")
+const tooltips = document.querySelectorAll('.tooltip')
 sidebar.addEventListener("click", function(){
     document.querySelector("#sidebar").classList.toggle("expand"); 
+    tooltips.forEach(function(tooltip){
+        if(document.querySelector("#sidebar").classList.contains("expand")){
+            tooltip.style.display = "none";
+        }
+        else{
+            tooltip.style.display = "inline-block";
+        }
+        // tooltip.toggle();
+    })
 });  
 
 // const sidebarItem = document.querySelectorAll(".sidebar-item")

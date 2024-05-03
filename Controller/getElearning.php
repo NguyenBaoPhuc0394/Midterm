@@ -11,7 +11,6 @@
             $mh = getMamon($selectedValue);
             if($infor['error'] == '' && $mh['error'] == ''){
                 $elearning = getElearning($infor['maLop'],$mh['mamon']);
-                // echo $elearning['LinkBaiGiang'];
                 $data = array($elearning['LinkBaiGiang'], $elearning['LinkHocOnl']);
                 $jsonData = json_encode($data);
                 echo $jsonData;

@@ -7,13 +7,13 @@
         <!-- Main content here -->
         <div class="utility">
             <div class="utility-header">
-                <h3>TRANG CHỦ</h3>
+                <h4>TRANG CHỦ</h4>
             </div>
             <div class="utility-body">
                 <div class="utility-body">
-                    <video class="video-content" autoplay loop muted playsinline>
+                    <!-- <video class="video-content" autoplay loop muted playsinline>
                         <source src="video/st3.mp4" type="video/mp4">
-                    </video>
+                    </video> -->
                     
                 </div>
                 
