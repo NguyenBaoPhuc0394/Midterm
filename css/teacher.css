@@ -1,0 +1,123 @@
+
+thead{
+    background-color: #153448;
+}
+
+.card-header{
+    background-color: #153448;
+    color: #fff;
+}
+
+.search-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 20px;
+    /* background-color: lightgray; */
+    border: 0.1px solid #153448;
+    /* width: 40%; */
+    transition: background 0.25s;
+}
+
+.search-input{
+    font-size: 16px;
+    color: #333;
+    margin: 3px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    width: 100%;
+}
+
+.search-input::placeholder{
+    color: #333;
+    opacity: 0.3;
+}
+
+.search-dropdown{
+    width: 20%;
+    outline: none;
+    border: none;
+}
+
+.select{
+    background: #fff;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 0.1px solid #153448;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    opacity: 0.8;
+}
+
+.dropdown{
+    margin: 5px;
+}
+
+#dropdown *{
+    box-sizing: border-box;
+}
+
+/* .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+} */
+
+#dropdown-menu{
+    list-style: none;
+    padding: 5px 1px;
+    background: #153448;
+    border: 1px solid lightblue;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color:white;
+    position: absolute;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.dropdown-menu::placeholder{
+    opacity: 0.5;
+}
+
+.dropdown-menu li{
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover{
+    background: #fff;
+    color: #153448;
+    /* font-weight: bolder; */
+}
+
+.act{
+    background: #fff;
+}
+
+li.act{
+    color: #153448;
+}
+
+.table{
+    margin: 20px;
+}

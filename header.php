@@ -6,6 +6,16 @@
         $infor = getInformation($id);
     }
 ?>
+<style>
+    .date{
+        color: lime;
+        font-weight: bold;
+        /* border: 1px solid white; */
+        padding: 5px;
+        font-size: large;
+        margin-left: 270px;
+    }
+</style>
 <div class="main">
     <nav class="navbar navbar-expand px-4 py-3">
         <div class="row">
@@ -19,6 +29,9 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="date">
+
         </div>
         <div class="navbar-collapse collapse">
             <ul class="navbar-nav ms-auto">
@@ -40,7 +53,7 @@
                             <span>Reset Password</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="changePassword.php" class="dropdown-item">
                             <i class="lni lni-question-circle"></i>
                             <span>Question</span>
                         </a>
@@ -50,3 +63,14 @@
         </div>
     </nav>
     <main class="main-content">
+
+<script>
+    let time =document.querySelector(".date");
+    let today = new Date();
+    let month = today.getMonth() + 1;
+    let year = today.getFullYear();
+    let date = today.getDate();
+    let current = `${date} - ${month} - ${year}`;
+    time.innerHTML = current;
+
+</script>

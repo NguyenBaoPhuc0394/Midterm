@@ -32,19 +32,19 @@
                     </a>
                 </li>
                 <li <?php echo $page_title =="Điểm số" ? "class='sidebar-item active'" : "class='sidebar-item'" ; ?>>
-                    <a href="#" class="sidebar-link" name='Tuition'>
+                    <a href="score.php" class="sidebar-link" name='Tuition'>
                         <!-- <i class="bi bi-cash"></i> -->
                         <i class="fa-solid fa-star"></i>
                         <span>Điểm số</span>
                         <span class="tooltip">Điểm số</span>
                     </a>
                 </li>
-                <li <?php echo $page_title =="Điểm số" ? "class='sidebar-item active'" : "class='sidebar-item'" ; ?>>
-                    <a href="#" class="sidebar-link" name='Tuition'>
+                <li <?php echo $page_title =="Thông tin giáo viên" ? "class='sidebar-item active'" : "class='sidebar-item'" ; ?>>
+                    <a href="teacher.php" class="sidebar-link" name='Tuition'>
                         <!-- <i class="bi bi-cash"></i> -->
                         <i class="fa-solid fa-chalkboard-user"></i>
-                        <span>Thông tin giảng viên</span>
-                        <span class="tooltip">Thông tin giảng viên</span>
+                        <span>Thông tin giáo viên</span>
+                        <span class="tooltip">Thông tin giáo viên</span>
                     </a>
                 </li>
                 <li <?php echo $page_title =="Thời khóa biểu" ? "class='sidebar-item active'" : "class='sidebar-item'" ; ?>>

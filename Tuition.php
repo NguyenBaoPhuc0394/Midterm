@@ -9,25 +9,68 @@
   if(isset($_SESSION['status']) && $_SESSION['status'] == 'login success'){
     $id = $_SESSION['maHS'];
     $inforTuition = getInforTuition($id);   
-    }
+}
 ?>
 
-<div class="container mt-5">
-    <h2 class="mb-4 text-center">Học phí</h2>
-    
-    <!-- Display all tuition fees (Static Data for Demonstration) -->
-    <div class="mb-5">
-        <h3>All Tuition Fees</h3>
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Date</th>
-                        <th>Tuition Details</th>
-                        <th>Station</th>
-                    </tr>
-                </thead>
-                <tbody>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4; /* Slightly gray background */
+    }
+    .container {
+        max-width: 80%;
+        margin: 40px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    }
+    .header {
+        background: #003C43;
+        color: white;
+        padding: 15px;
+        font-size: 24px;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    .custom-table {
+        margin-top: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    }
+    .custom-table th, .custom-table td {
+        padding: 12px 15px;
+        text-align: left;
+        vertical-align: middle;
+        border-bottom: 2px solid #dee2e6;
+    }
+    .custom-table th {
+        background-color: black;
+        color: white;
+    }
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    .custom-table tbody tr:hover {
+        background-color: #e2e6ea;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="header">Học phí</div>
+    <table class="table align-middle custom-table">
+        <thead>
+            <tr>
+                <th scope="col">Ngày</th>
+                <th scope="col">Chi tiết học phí</th>
+                <th scope="col">Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
                 <?php
                     $tuition;
                     if(count($inforTuition) > 0 && !array_key_exists('error', $inforTuition)){
@@ -45,7 +88,7 @@
                         }
                     }
                     function getSum($filename){
-                        $filepath = '../MVC_Admin/modal/tuition/'.$filename;
+                        $filepath = '../Midterm-MVC_Admin/modal/tuition/'.$filename;
                         $sum = 0;
                         $spreadsheet = IOFactory::load($filepath);
                         $sheet = $spreadsheet->getActiveSheet();

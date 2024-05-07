@@ -1,7 +1,7 @@
 <?php 
   session_start();
   $page_title = "E-Learning";
-  // require_once('Controller/getElearning.php');
+  require_once('Controller/getElearning.php');
   include("sidebar.php");
   include("header.php");
   echo '<link rel="stylesheet" href="css/elearning.css">';
@@ -23,15 +23,14 @@
               <div class="caret"></div>
             </div>
             <ul class="menu">
-                <!-- <li class="act"></li> -->
-                <li>Toan</li>
-                <li>Van</li>
-                <li>Ly</li>
-                <li>Hoa</li>
-                <li>Sinh Hoc</li>
-                <li>Su</li>
-                <li>Dia</li>
-                <li>Tin Hoc</li>
+                <?php  
+                  $result = getSubjects();
+                  foreach($result as $res){
+                    if($res['error'] == ''){
+                      echo '<li>'.$res['temon'].'</li>';
+                    }
+                  }
+                ?>
             </ul>
           </div>
         </div>

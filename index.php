@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if($_SESSION['status']  !== 'login success' || !isset($_SESSION['maHS']) || !isset($_SESSION['status'])){
+    if(!isset($_SESSION['status']) || !isset($_SESSION['maHS']) || $_SESSION['status'] !== 'login success'){
         header('Location: login.php');
         exit;
     }
@@ -10,3 +10,4 @@
     include("home.php");
     include("footer.php");
 ?>
+

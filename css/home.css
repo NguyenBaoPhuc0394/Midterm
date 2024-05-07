@@ -1,0 +1,105 @@
+.utility {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 100%; 
+    min-height: 100vh; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+.utility-header, .utility-body, .profile-container, .actions {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.utility-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.personal-info {
+    flex: 2;
+    text-align: center; 
+    padding: 5px;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+.personal-info h2 {
+    font-size: 35px; 
+    margin-bottom: 10px; 
+    color:#1694ee;
+}
+
+.personal-info p {
+    margin-bottom: 7px; /
+}
+
+
+.actions {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-button {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.action-button .icon {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.action-button .icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.action-button .title {
+    font-size: 16px;
+}
+
+.action-button.change-class {
+    background-color: #14792c;
+}
+
+.action-button.logout {
+    background-color: #d0a31b;
+}
+
+.action-button.new-action1 {
+    background-color: #c62452;
+}
+
+.action-button.new-action2 {
+    background-color: #138fae;
+}
+
+.action-button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+

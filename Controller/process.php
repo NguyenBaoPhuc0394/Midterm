@@ -70,6 +70,23 @@
         return array('error' => '', 'mamon' => $mamon);
     }
 
+    function getTenmon($mamon){
+        $conn = connect();
+        $sql = 'Select tenmon from Monhoc where mamon = ?';
+        $stmt = mysqli_prepare($conn,$sql);
+        mysqli_stmt_bind_param($stmt,'s',$mamon);
+        if (!mysqli_stmt_execute($stmt)){
+            return array('error' => 'Cannot execute the sql');
+        }
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 0){
+            return array('error' => 'Invalid subjectID','mamon' => $mamon);
+        }
+        mysqli_stmt_bind_result($stmt, $tenmon);
+        mysqli_stmt_fetch($stmt);
+        return array('error' => '', 'tenmon' => $tenmon);
+    }
+
     function getElearning($malop, $mamon){
         $conn = connect();
         $sql = 'Select * from Elearning where maLop = ? and maMon = ?';
@@ -144,6 +161,100 @@
         mysqli_stmt_bind_result($stmt, $tkb);
         mysqli_stmt_fetch($stmt);
         return array('error' => '', 'tkb' => $tkb);
+    }
+
+    function getTeachers(){
+        $conn = connect();
+        $sql = 'Select * from GiaoVien';
+        $stmt = mysqli_prepare($conn,$sql);
+        // mysqli_stmt_bind_param($stmt);
+        if (!mysqli_stmt_execute($stmt)){
+            return array('error' => 'Cannot execute the SQL');
+        }
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 0){
+            return array('error' => 'No data found');
+        }
+        $results = array();
+        mysqli_stmt_bind_result($stmt, $magv, $mamon, $hoten,$sdt);
+        while (mysqli_stmt_fetch($stmt)) {
+            $results[] = array(
+                'error' =>'',
+                'magv' => $magv,
+                'mamon' => $mamon,
+                'hoten' => $hoten,
+                'sdt' => $sdt
+            );
+        }
+        return $results;
+    }
+
+    function getTeacherBySub($mamon){
+        $conn = connect();
+        $sql = 'Select * from GiaoVien where mamon = ?';
+        $stmt = mysqli_prepare($conn,$sql);
+        mysqli_stmt_bind_param($stmt,'s',$mamon);
+        if (!mysqli_stmt_execute($stmt)){
+            return array('error' => 'Cannot execute the SQL');
+        }
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 0){
+            return array('error' => 'No data found');
+        }
+        $results = array();
+        mysqli_stmt_bind_result($stmt, $magv, $mamon, $hoten,$sdt);
+        while (mysqli_stmt_fetch($stmt)) {
+            $results[] = array(
+                'error' =>'',
+                'magv' => $magv,
+                'mamon' => $mamon,
+                'hoten' => $hoten,
+                'sdt' => $sdt
+            );
+        }
+        return $results;
+    }
+
+    function getSubjects(){
+        $conn = connect();
+        $sql = 'Select * from MonHoc';
+        $stmt = mysqli_prepare($conn,$sql);
+        // mysqli_stmt_bind_param($stmt);
+        if (!mysqli_stmt_execute($stmt)){
+            return array('error' => 'Cannot execute the SQL');
+        }
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 0){
+            return array('error' => 'No data found');
+        }
+        $results = array();
+        mysqli_stmt_bind_result($stmt, $mamon, $tenmon);
+        while (mysqli_stmt_fetch($stmt)) {
+            $results[] = array(
+                'error' =>'',
+                'mamon' => $mamon,
+                'temon' => $tenmon
+            );
+        }
+        return $results;
+    }
+
+    function getResults($mahs, $mamon){
+        $conn = connect();
+        $sql = 'Select * from KQHT where mahs = ? and mamon = ?';
+        $stmt = mysqli_prepare($conn,$sql);
+        mysqli_stmt_bind_param($stmt,'ss',$mahs, $mamon);
+        if (!mysqli_stmt_execute($stmt)){
+            return array('error' => 'Cannot execute the SQL');
+        }
+        mysqli_stmt_store_result($stmt);
+        if(mysqli_stmt_num_rows($stmt) == 0){
+            return array('error' => 'No data found');
+        }
+        $results = array();
+        mysqli_stmt_bind_result($stmt, $mahs, $mamon, $qt,$gk,$ck);
+        mysqli_stmt_fetch($stmt);
+        return array('error' => '', 'mahs' => $mahs,'mamon' => $mamon, 'qt' => $qt, 'gk' => $gk, 'ck' => $ck);
     }
 
     function createResetPassRequest($email)
