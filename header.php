@@ -55,7 +55,7 @@
                         <div class="dropdown-divider"></div>
                         <a href="changePassword.php" class="dropdown-item">
                             <i class="lni lni-question-circle"></i>
-                            <span>Question</span>
+                            <span>Change Password</span>
                         </a>
                     </div>
                 </li>
