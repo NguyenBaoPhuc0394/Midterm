@@ -16,7 +16,7 @@
       }
   }
   function getData($maLop){
-    $filepath = '../MVC_Admin/modal/timetable/'.$maLop;
+    $filepath = '../Admin/modal/timetable/'.$maLop;
     $spreadsheet = IOFactory::load($filepath);
     $sheet = $spreadsheet->getActiveSheet();
     $data = $sheet->toArray();

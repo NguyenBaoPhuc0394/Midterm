@@ -88,7 +88,7 @@
                         }
                     }
                     function getSum($filename){
-                        $filepath = '../Midterm-MVC_Admin/modal/tuition/'.$filename;
+                        $filepath = '../Admin/modal/tuition/'.$filename;
                         $sum = 0;
                         $spreadsheet = IOFactory::load($filepath);
                         $sheet = $spreadsheet->getActiveSheet();
