@@ -59,6 +59,77 @@ insert into Elearning values('10A3', 'T', '', '');
 insert into Elearning values('10A3', 'TH', '', '');
 insert into Elearning values('10A3', 'V', '', '');
 
+insert into kqht values('HS01', 'D', '', '', '');
+insert into kqht values('HS01', 'H', '', '', '');
+insert into kqht values('HS01', 'L', '', '', '');
+insert into kqht values('HS01', 'S', '', '', '');
+insert into kqht values('HS01', 'SH', '', '', '');
+insert into kqht values('HS01', 'T', '', '', '');
+insert into kqht values('HS01', 'TH', '', '', '');
+insert into kqht values('HS01', 'V', '', '', '');
+
+insert into kqht values('HS02', 'D', '', '', '');
+insert into kqht values('HS02', 'H', '', '', '');
+insert into kqht values('HS02', 'L', '', '', '');
+insert into kqht values('HS02', 'S', '', '', '');
+insert into kqht values('HS02', 'SH', '', '', '');
+insert into kqht values('HS02', 'T', '', '', '');
+insert into kqht values('HS02', 'TH', '', '', '');
+insert into kqht values('HS02', 'V', '', '', '');
+
+insert into kqht values('HS03', 'D', '', '', '');
+insert into kqht values('HS03', 'H', '', '', '');
+insert into kqht values('HS03', 'L', '', '', '');
+insert into kqht values('HS03', 'S', '', '', '');
+insert into kqht values('HS03', 'SH', '', '', '');
+insert into kqht values('HS03', 'T', '', '', '');
+insert into kqht values('HS03', 'TH', '', '', '');
+insert into kqht values('HS03', 'V', '', '', '');
+
+insert into kqht values('HS04', 'D', '', '', '');
+insert into kqht values('HS04', 'H', '', '', '');
+insert into kqht values('HS04', 'L', '', '', '');
+insert into kqht values('HS04', 'S', '', '', '');
+insert into kqht values('HS04', 'SH', '', '', '');
+insert into kqht values('HS04', 'T', '', '', '');
+insert into kqht values('HS04', 'TH', '', '', '');
+insert into kqht values('HS04', 'V', '', '', '');
+
+insert into kqht values('HS05', 'D', '', '', '');
+insert into kqht values('HS05', 'H', '', '', '');
+insert into kqht values('HS05', 'L', '', '', '');
+insert into kqht values('HS05', 'S', '', '', '');
+insert into kqht values('HS05', 'SH', '', '', '');
+insert into kqht values('HS05', 'T', '', '', '');
+insert into kqht values('HS05', 'TH', '', '', '');
+insert into kqht values('HS05', 'V', '', '', '');
+
+insert into kqht values('HS06', 'D', '', '', '');
+insert into kqht values('HS06', 'H', '', '', '');
+insert into kqht values('HS06', 'L', '', '', '');
+insert into kqht values('HS06', 'S', '', '', '');
+insert into kqht values('HS06', 'SH', '', '', '');
+insert into kqht values('HS06', 'T', '', '', '');
+insert into kqht values('HS06', 'TH', '', '', '');
+insert into kqht values('HS06', 'V', '', '', '');
+
+insert into kqht values('HS07', 'D', '', '', '');
+insert into kqht values('HS07', 'H', '', '', '');
+insert into kqht values('HS07', 'L', '', '', '');
+insert into kqht values('HS07', 'S', '', '', '');
+insert into kqht values('HS07', 'SH', '', '', '');
+insert into kqht values('HS07', 'T', '', '', '');
+insert into kqht values('HS07', 'TH', '', '', '');
+insert into kqht values('HS07', 'V', '', '', '');
+
+insert into kqht values('HS08', 'D', '', '', '');
+insert into kqht values('HS08', 'H', '', '', '');
+insert into kqht values('HS08', 'L', '', '', '');
+insert into kqht values('HS08', 'S', '', '', '');
+insert into kqht values('HS08', 'SH', '', '', '');
+insert into kqht values('HS08', 'T', '', '', '');
+insert into kqht values('HS08', 'TH', '', '', '');
+insert into kqht values('HS08', 'V', '', '', '');
 
 insert into adminAccount values ('admin', '21232f297a57a5a743894a0e4a801fc3'); /*pass: admin*/
 insert into studentAccount values ('HS01','HS01_10A1','8466b50ac66df60d0313189094d3bfe2'); /*pass: giahuy02092004*/

@@ -80,7 +80,18 @@ create table resetPassword(
     otp varchar(4),
     expired_on varchar(20),
     primary key(TaiKhoan)
-)
+);
+
+create table KQHT(
+	MaHS varchar(10) not null, 
+	FOREIGN KEY (MaHS) REFERENCES HocSinh(MaHS),
+	MaMon varchar(10) not null,
+    foreign key(MaMon) references MonHoc(MaMon),
+	QT1 double,
+	GK double,
+	CK double,
+	primary key(MaHS, MaMon)
+);
 
 
 
