@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require 'con/process.php';
+    require 'config/process.php';
     $page_title = 'teacher';
     $error = '';
     $message = '';
